@@ -1,9 +1,9 @@
-list = [1,2,3,4,5,6]
+list = [1, 2, 3, 4, 5, 6]
 
 for item in list:
   print(item)
 
-print('*******')
+print("*******")
 
-for x in range(1,11):
+for x in range(1, 11):
   print(x)

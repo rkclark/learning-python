@@ -1,11 +1,11 @@
 # absolute value
 
-absolute = abs(-5) # 5
+absolute = abs(-5)  # 5
 print(absolute)
 
 # min / max from list
 
-list = [2,3,5,6,4,3,4,10]
+list = [2, 3, 5, 6, 4, 3, 4, 10]
 
 minValue = min(list)
 maxValue = max(list)
@@ -22,14 +22,14 @@ print(rounded)
 
 # parse integer
 
-intAsString = '55'
+intAsString = "55"
 integer = int(intAsString)
 
 print(integer)
 
 # parse float
 
-floatString = '55.12'
+floatString = "55.12"
 parsedFloat = float(floatString)
 
 print(parsedFloat)

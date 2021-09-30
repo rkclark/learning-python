@@ -1,7 +1,7 @@
 import csv
 
-with open('./csv/example.csv') as csvfile:
-  csvContent = csv.reader(csvfile, delimiter=',')
+with open("./csv/example.csv") as csvfile:
+  csvContent = csv.reader(csvfile, delimiter=",")
 
   dates = []
   colours = []
@@ -15,9 +15,9 @@ with open('./csv/example.csv') as csvfile:
 
   print(dates, colours)
 
-  whatColour = input('What colour do you wish to know the date of?')
+  whatColour = input("What colour do you wish to know the date of?")
   index = colours.index(whatColour)
 
   desiredDate = dates[index]
 
-  print('The date of ', whatColour, ' is ', desiredDate)
+  print("The date of ", whatColour, " is ", desiredDate)

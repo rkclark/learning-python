@@ -1,4 +1,3 @@
-
 # rename module on import
 import statistics as s
 

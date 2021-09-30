@@ -6,17 +6,19 @@ import time
 # one thread at a time can use it
 print_lock = threading.Lock()
 
+
 def exampleJob(worker):
   time.sleep(0.5)
-
   with print_lock:
     print(threading.current_thread().name, worker)
+
 
 def threader():
   while True:
     worker = q.get()
     exampleJob(worker)
     q.task_done()
+
 
 q = Queue()
 
@@ -34,4 +36,4 @@ for worker in range(20):
 
 q.join()
 
-print('Entire job took: ', time.time()-start)
+print("Entire job took: ", time.time() - start)
