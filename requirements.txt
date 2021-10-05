@@ -1,10 +1,13 @@
 appdirs==1.4.4
 black==21.6b0
 cblack==21.6b0
+certifi==2021.5.30
+charset-normalizer==2.0.6
 click==8.0.1
 cx-Freeze==6.8.1
 cycler==0.10.0
 flake8==3.9.2
+idna==3.2
 importlib-metadata==4.8.1
 kiwisolver==1.3.2
 matplotlib==3.4.3
@@ -19,8 +22,10 @@ pyflakes==2.3.1
 pyparsing==2.4.7
 python-dateutil==2.8.2
 regex==2021.9.24
+requests==2.26.0
 six==1.16.0
 toml==0.10.2
 tomli==1.2.1
 typing-extensions==3.10.0.2
+urllib3==1.26.7
 zipp==3.6.0
