@@ -7,8 +7,6 @@ def get_postcode():
   while True:
     postcode = input("Enter postcode:\n")
 
-    print("GOT POSTCODE", postcode)
-
     match = re.search(postcode_regex, postcode)
 
     if match is not None:
