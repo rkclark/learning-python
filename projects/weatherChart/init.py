@@ -1,13 +1,13 @@
-import re
+from os import path, getenv
+from dotenv import load_dotenv
+from get_postcode import get_postcode
 
-while True:
-  postCode = input("Enter postcode:\n")
+current_dir = path.dirname(path.abspath(__file__))
+dotenv_path = path.join(current_dir, ".env")
 
-  postCodeRegex = r"^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$"
+load_dotenv(dotenv_path, verbose=True)
 
-  match = re.search(postCodeRegex, postCode)
+OPEN_WEATHER_API_KEY = getenv("OPEN_WEATHER_API_KEY")
 
-  if match is not None:
-    break
-
-  print("Postcode invalid - please enter a valid one.")
+postcode = get_postcode()
+print("Got postcode:\n" + postcode)
